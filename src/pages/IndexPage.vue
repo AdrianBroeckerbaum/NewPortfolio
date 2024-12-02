@@ -1,47 +1,46 @@
 <template>
-  <q-page class="row items-center justify-evenly">
-    <example-component
-      title="Example component"
-      active
-      :todos="todos"
-      :meta="meta"
-    ></example-component>
+  <q-page class="q-pa-md">
+    <div class="q-gutter-md">
+      <!-- Card 1 -->
+      <q-card bordered class="q-my-md">
+        <q-card-section>
+          <div class="text-h6">NPC-Projekt</div>
+        </q-card-section>
+        <q-card-section>
+          <p>Tools: Unreal, C++</p>
+          <p>
+            Ich habe gelernt mit Unreal umzugehen und C++ gelernt und KI in
+            Videospiele einzubauen.
+          </p>
+        </q-card-section>
+      </q-card>
+
+      <!-- Card 2 -->
+      <q-card bordered class="q-my-md">
+        <q-card-section>
+          <div class="text-h6">Hands Vs. Zombies</div>
+        </q-card-section>
+        <q-card-section>
+          <p>Tools: Unity, C#</p>
+          <p>Ich habe VR gelernt und mit Unity umzugehen.</p>
+        </q-card-section>
+      </q-card>
+
+      <!-- Card 3 -->
+      <q-card bordered class="q-my-md">
+        <q-card-section>
+          <div class="text-h6">Ergonomics</div>
+        </q-card-section>
+        <q-card-section>
+          <p>Tools: ROS, Python</p>
+          <p>
+            Ich habe gelernt mich in neue Systeme einzubauen und
+            wissenschaftliche Konzepte umzusetzen.
+          </p>
+        </q-card-section>
+      </q-card>
+    </div>
   </q-page>
 </template>
 
-<script setup lang="ts">
-import { ref } from 'vue';
-import { Todo, Meta } from 'components/models';
-import ExampleComponent from 'components/ExampleComponent.vue';
-
-defineOptions({
-  name: 'IndexPage'
-});
-
-const todos = ref<Todo[]>([
-  {
-    id: 1,
-    content: 'ct1'
-  },
-  {
-    id: 2,
-    content: 'ct2'
-  },
-  {
-    id: 3,
-    content: 'ct3'
-  },
-  {
-    id: 4,
-    content: 'ct4'
-  },
-  {
-    id: 5,
-    content: 'ct5'
-  }
-]);
-
-const meta = ref<Meta>({
-  totalCount: 1200
-});
-</script>
+<script setup lang="ts"></script>
