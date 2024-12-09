@@ -1,5 +1,5 @@
 <template>
-  <q-page class="q-pa-xl q-my-lg">
+  <q-page class="q-pa-xl q-my-lg project-page">
     <div id="projects" class="q-gutter-md q-mx-auto" style="max-width: 800px">
       <h2 class="text-h5 text-center q-mb-md text-white">Projects</h2>
 
@@ -42,7 +42,7 @@
       <!-- Add more cards as needed -->
       <q-card bordered class="q-my-md project-card">
         <q-img
-          src="https://via.placeholder.com/800x400"
+          src="src\assets\ProjectImages\Screenshot39Copy.png"
           alt="Project Image"
           class="project-image"
         />
@@ -69,7 +69,7 @@
 
       <q-card bordered class="q-my-md project-card">
         <q-img
-          src="src\assets\ProjectImages\Ergonomics.jpg"
+          src="src/assets/ProjectImages/Ergonomics.jpg"
           alt="Project Image"
           class="project-image"
         />
@@ -101,6 +101,13 @@
 </template>
 
 <style scoped>
+/* Background styling for the page */
+.project-page {
+  background-color: #1d2134;
+  color: white;
+  min-height: 100vh;
+}
+
 /* Card styling */
 .project-card {
   background-color: #1d2134;
@@ -147,5 +154,3 @@
   margin-bottom: 8px;
 }
 </style>
-
-// src/main.js import './global.css';

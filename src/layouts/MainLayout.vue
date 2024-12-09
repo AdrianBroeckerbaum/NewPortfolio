@@ -12,7 +12,7 @@
     </q-header>
 
     <!-- Page Content -->
-    <q-page-container>
+    <q-page-container q-layout>
       <HeroSection />
       <AboutMe />
       <TimeLine />
@@ -42,6 +42,16 @@ function scrollToSection(sectionId: string) {
 /* Custom color for navigation bar */
 .bg-custom {
   background-color: #1d2134;
+}
+
+q-layout {
+  background-color: #1d2134;
+  color: white; /* Ensures text is readable against the dark background */
+}
+
+.q-layout {
+  background-color: #1d2134;
+  color: white; /* Ensures text is readable against the dark background */
 }
 </style>
 

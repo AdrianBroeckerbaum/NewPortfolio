@@ -1,30 +1,34 @@
 <template>
   <div
     id="hero"
-    class="full-width text-white text-center flex flex-center"
-    style="height: 100vh; flex-direction: column; background-color: #1d2134"
+    class="full-width text-white text-center flex flex-center q-pt-none"
+    style="
+      height: 100vh;
+      flex-direction: column;
+      background-color: #1d2134;
+      margin-top: -50px;
+    "
   >
     <div>
-      <h1 class="text-h3 q-mb-lg">
-        Hi, I am <span class="text-orange">Adrian Bröckerbaum</span>.
+      <h1 class="text-h7 q-mb-lg" style="font-weight: bold">
+        Hi, I am
+        <span class="text-orange">
+          <br />
+          Adrian <br />
+          Bröckerbaum</span
+        >.
       </h1>
       <p class="text-subtitle1 q-mb-lg">
         I build projects, learn new technologies, and solve problems.
       </p>
-      <q-btn
-        unelevated
-        color="secondary"
-        label="See My Work"
-        class="q-mb-md"
-        @click="scrollToSection('projects')"
-      />
+
       <div>
         <!-- GitHub Button -->
         <q-btn
           flat
           color="secondary"
           class="q-mx-sm"
-          href="https://github.com/your-username"
+          href="https://github.com/AdrianBroeckerbaum"
           target="_blank"
         >
           <svg
@@ -50,7 +54,7 @@
           flat
           color="secondary"
           class="q-mx-sm"
-          href="https://www.linkedin.com/in/your-profile"
+          href="https://www.linkedin.com/in/adrian-br%C3%B6ckerbaum-a541b0256/"
           target="_blank"
         >
           <svg
@@ -72,20 +76,38 @@
             <circle cx="4" cy="4" r="2" />
           </svg>
         </q-btn>
+
+        <!-- Mail Button -->
+        <q-btn
+          flat
+          color="secondary"
+          class="q-mx-sm"
+          href="mailto:your-email@example.com"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-mail"
+          >
+            <path
+              d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+            />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+        </q-btn>
       </div>
     </div>
   </div>
 </template>
 
-<script setup lang="ts">
-// Smooth scrolling for "See My Work" button
-function scrollToSection(sectionId: string) {
-  const section = document.getElementById(sectionId);
-  if (section) {
-    section.scrollIntoView({ behavior: 'smooth' });
-  }
-}
-</script>
+<script setup lang="ts"></script>
 
 <style scoped>
 .full-width {
@@ -99,6 +121,6 @@ function scrollToSection(sectionId: string) {
   align-items: center;
 }
 .text-orange {
-  color: #ffa500; /* Orange Farbe */
+  color: #ffa500; /* Orange color */
 }
 </style>

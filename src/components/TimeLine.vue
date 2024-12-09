@@ -1,52 +1,65 @@
 <template>
   <q-page class="q-pa-xl q-my-lg">
-    <div id="timeLine" class="q-gutter-md q-mx-auto" style="max-width: 800px">
-      <h2 class="text-h5 text-center q-mb-md">Resume</h2>
-      <q-timeline>
-        <!-- 2016 -->
-        <q-timeline-entry
-          side="right"
-          title="2016"
-          subtitle="Abitur"
-          icon="school"
-        >
-          <p>Erfolgreicher Abschluss des Abiturs.</p>
-        </q-timeline-entry>
+    <h2 class="text-h5 text-center q-mb-md">Resume</h2>
+    <div class="row q-col-gutter-md">
+      <!-- Education Timeline -->
+      <div class="col-12 col-md-6">
+        <h3 class="text-h6 text-center">Education</h3>
+        <q-timeline>
+          <q-timeline-entry
+            side="right"
+            title="2016"
+            subtitle="Abitur"
+            icon="feather-award"
+          >
+            <p>Erfolgreicher Abschluss des Abiturs.</p>
+          </q-timeline-entry>
 
-        <!-- 2017-2023 -->
-        <q-timeline-entry
-          side="left"
-          title="2017 - 2023"
-          subtitle="Informatik Studium"
-          icon="mdi-laptop"
-        >
-          <p>Studium der Informatik an der Technischen Universität Berlin.</p>
-        </q-timeline-entry>
+          <q-timeline-entry
+            side="right"
+            title="2017 - 2023"
+            subtitle="Informatik Studium"
+            icon="feather-monitor"
+          >
+            <p>Studium der Informatik an der Technischen Universität Berlin.</p>
+          </q-timeline-entry>
 
-        <!-- 2023-2024 -->
-        <q-timeline-entry
-          side="right"
-          title="2023 - 2024"
-          subtitle="Nebenjob bei Gemitec"
-          icon="work"
-        >
-          <p>
-            Erfahrung in der Praxis und Entwicklung von Lösungen bei Gemitec.
-          </p>
-        </q-timeline-entry>
+          <q-timeline-entry
+            side="right"
+            title="2017 - 2023"
+            subtitle="Master Degree"
+            icon="feather-book-open"
+          >
+            <p>I make my master degree at the HS-Harz.</p>
+          </q-timeline-entry>
+        </q-timeline>
+      </div>
 
-        <!-- 2024 - Jetzt -->
-        <q-timeline-entry
-          side="left"
-          title="2024 - Jetzt"
-          subtitle="Medien und Spielekonzeption"
-          icon="mdi-gamepad-variant"
-        >
-          <p>
-            Studium der Medien- und Spielekonzeption an der Hochschule Harz.
-          </p>
-        </q-timeline-entry>
-      </q-timeline>
+      <!-- Work Timeline -->
+      <div class="col-12 col-md-6">
+        <h3 class="text-h6 text-center">Work Experience</h3>
+        <q-timeline>
+          <q-timeline-entry
+            side="right"
+            title="Work Experience"
+            subtitle="Full Stack webdeveloper"
+            icon="feather-briefcase"
+          >
+            <p>
+              Erfahrung in der Praxis und Entwicklung von Lösungen bei Gemitec.
+            </p>
+          </q-timeline-entry>
+
+          <q-timeline-entry
+            side="right"
+            title="2025 - Present"
+            subtitle="Unity Game Development"
+            icon="work"
+          >
+            <p>A small game for TU-Braunschweig</p>
+          </q-timeline-entry>
+        </q-timeline>
+      </div>
     </div>
   </q-page>
 </template>
