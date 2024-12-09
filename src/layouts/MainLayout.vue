@@ -44,3 +44,5 @@ function scrollToSection(sectionId: string) {
   background-color: #1d2134;
 }
 </style>
+
+/* src/global.css */ body { background-color: #1d2134; }

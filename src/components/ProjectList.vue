@@ -147,3 +147,5 @@
   margin-bottom: 8px;
 }
 </style>
+
+// src/main.js import './global.css';
